@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+header {
+  background: #7D807B;
+  overflow: auto;
+  content: "";
+  clear: both; }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    letter-spacing: -0.7px; }
+    header ul li {
+      float: right;
+      color: white;
+      padding: 14px 16px; }
+      header ul li a {
+        color: white;
+        text-decoration: none; }
+        header ul li a:hover {
+          color: yellow; }
+
+footer {
+  background: #7D807B;
+  overflow: auto;
+  content: "";
+  clear: both; }
+
+#cabecera {
+  float: left;
+  width: 50%;
+  height: 85px; }
+
+.cabecera_logo {
+  position: relative; }
+  .cabecera_logo img {
+    width: 50%;
+    position: absolute;
+    left: 20px; }
+
+.cabecera_menu {
+  position: relative; }
+  .cabecera_menu ul {
+    position: absolute;
+    top: 20px;
+    right: 10px; }
+
+#pie {
+  float: left;
+  width: 33.33%;
+  height: 60px; }
+
+.pie_logo {
+  position: relative; }
+  .pie_logo img {
+    position: absolute;
+    top: 3px;
+    left: 30px; }
+
+.pie_face {
+  position: relative; }
+  .pie_face img {
+    position: absolute;
+    top: 10px;
+    left: 300px; }
+
+.pie_centro {
+  color: white;
+  text-align: center; }

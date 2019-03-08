@@ -1,0 +1,84 @@
+$blanco: white;
+$amarillo: yellow;
+$gris: #7D807B;
+
+* {
+	box-sizing: border-box;
+}
+header {
+	background: $gris;
+	overflow: auto;
+	content: "";
+	clear: both;
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		letter-spacing: -0.7px;
+		li {
+			float: right;
+			color: $blanco;
+			padding: 14px 16px;
+			a {
+				color: $blanco;
+				text-decoration: none;
+				&:hover {
+					color: $amarillo;
+				}
+			}
+		}
+	}
+}
+footer {
+	background: $gris;
+	overflow: auto;
+	content: "";
+	clear: both;
+}
+#cabecera {
+	float: left;
+	width: 50%;
+	height: 85px;
+}
+.cabecera_logo {
+	position: relative;
+	img {
+		width: 50%;
+		position: absolute;
+		left: 20px;
+	}
+}
+.cabecera_menu {
+	position: relative;
+	ul {
+		position: absolute;
+		top: 20px;
+		right: 10px;
+	}
+}
+#pie {
+	float: left;
+	width: 33.33%;
+	height: 60px;
+}
+.pie_logo {
+	position: relative;
+	img {
+		position: absolute;
+		top: 3px;
+		left: 30px;
+	}
+}
+.pie_face {
+	position: relative;
+	img {
+		position: absolute;
+		top: 10px;
+		left: 300px;
+	}
+}
+.pie_centro {
+	color: $blanco;
+	text-align: center;
+}  

@@ -2,28 +2,36 @@ doctype html
 head
   meta(charset='UTF-8')
   title MANGO
+  link(rel='stylesheet', type='text/css', href='estilos.css')
 // Cabecera
 header
-  div
+  #cabecera.cabecera_logo
     img(src='imagenes/mango_logo.png', width='300', height='75', alt='Logotipo de MANGO')
   // Menú de Navegación
-  nav
+  nav#cabecera.cabecera_menu
     ul
       li
-        a(href='#')  HOLA 1 
-      li
-        a(href='#')  HOLA 2 
+        a(href='#')  HOLA 4 
+      li  | 
       li
         a(href='#')  HOLA 3 
+      li  | 
       li
-        a(href='#')  HOLA 4 
+        a(href='#')  HOLA 2 
+      li  | 
+      li
+        a(href='#')  HOLA 1 
 // Sección del contenido principal. Wrapper: contenedor
 section.wrapper
   section.slider
     div
-      img(src='imagenes/auto1.jpg', width='1335', height='300', alt='Logotipo de MANGO')
-      img(src='imagenes/auto2.jpg', width='1335', height='300', alt='Logotipo de MANGO')
-      img(src='imagenes/auto3.jpg', width='1335', height='300', alt='Logotipo de MANGO')
+      ul
+        li
+          img(src='imagenes/auto1.jpg', width='1335', height='300', alt='Logotipo de MANGO')
+        li
+          img(src='imagenes/auto2.jpg', width='1335', height='300', alt='Logotipo de MANGO')
+        li
+          img(src='imagenes/auto3.jpg', width='1335', height='300', alt='Logotipo de MANGO')
     p CARRO 1 CARRO 1
     input(type='button', value='VER MÁS')
     br
@@ -31,50 +39,34 @@ section.wrapper
   // Contendio principal para el buscador
   article
     p
-      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-      | diam nonummy nibh euismod tincidunt ut laoreet dolore
-      | magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-      | quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-      | aliquip ex ea commodo consequat. Duis autem vel eum iriure
-      | dolor in hendrerit in vulputate velit esse molestie consequat, vel
-      | illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-      | iusto odio dignissim qui blandit praesent luptatum zzril delenit
-      | augue duis dolore te feugait nulla facilisi.
+      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+      | aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+      | luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
       br
-      | Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
-      |           diam nonummy nibh euismod tincidunt ut laoreet dolore
-      |           magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-      |           quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-      |           aliquip ex ea commodo consequat.
+      | Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+      | veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       br
-      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-      |           diam nonummy nibh euismod tincidunt ut laoreet.
+      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
       br
-      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-      |           diam nonummy nibh euismod tincidunt ut laoreet dolore
-      |           magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-      |           quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-      |           aliquip ex ea commodo consequat. Duis autem vel eum iriure
-      |           dolor in hendrerit in vulputate velit esse molestie consequat, vel
-      |           illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-      |           iusto odio dignissim qui blandit praesent luptatum zzril delenit
-      |           augue duis dolore te feugait nulla facilisi.
+      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+      | commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+      | delenit augue duis dolore te feugait nulla facilisi.
       br
-      | Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
-      |           diam nonummy nibh euismod tincidunt ut laoreet dolore
-      |           magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-      |           quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-      |           aliquip ex ea commodo consequat.
+      | Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+      | nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
       br
-      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-      |           diam nonummy nibh euismod tincidunt ut laoreet
+      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
 // Pie de página
 footer
   div
-    img(src='imagenes/mango_logo.png', width='150', height='40', alt='Logotipo de MANGO')
-  p
-    | Lorem ipsum Lorem ipsum
-    br
-    | Lorem ipsum
-  div
-    img(src='imagenes/facebook_logo.png', width='40', alt='Logotipo Facebook')
+    #pie.pie_logo
+      img(src='imagenes/mango_logo.png', width='150', height='40', alt='Logotipo de MANGO')
+    #pie.pie_centro
+      p
+        | Lorem ipsum Lorem ipsum
+        br
+        | Lorem ipsum
+    #pie.pie_face
+      a(href='http://www.facebook.com', target='_blank')
+        div
+          img(src='imagenes/facebook_logo.png', width='40', alt='Logotipo Facebook')  

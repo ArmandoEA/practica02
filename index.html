@@ -2,24 +2,34 @@
 <head>
   <meta charset="UTF-8">
   <title>MANGO</title>
+  <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <!-- Cabecera-->
 <header>
-  <div><img src="imagenes/mango_logo.png" width="300" height="75" alt="Logotipo de MANGO"></div>
+  <div class="cabecera_logo" id="cabecera"><img src="imagenes/mango_logo.png" width="300" height="75" alt="Logotipo de MANGO"></div>
   <!-- Menú de Navegación-->
-  <nav>
+  <nav class="cabecera_menu" id="cabecera">
     <ul>
-      <li><a href="#"> HOLA 1 </a></li>
-      <li><a href="#"> HOLA 2 </a></li>
-      <li><a href="#"> HOLA 3 </a></li>
       <li><a href="#"> HOLA 4 </a></li>
+      <li> | </li>
+      <li><a href="#"> HOLA 3 </a></li>
+      <li> | </li>
+      <li><a href="#"> HOLA 2 </a></li>
+      <li> | </li>
+      <li><a href="#"> HOLA 1 </a></li>
     </ul>
   </nav>
 </header>
 <!-- Sección del contenido principal. Wrapper: contenedor-->
 <section class="wrapper">
   <section class="slider">
-    <div><img src="imagenes/auto1.jpg" width="1335" height="300" alt="Logotipo de MANGO"><img src="imagenes/auto2.jpg" width="1335" height="300" alt="Logotipo de MANGO"><img src="imagenes/auto3.jpg" width="1335" height="300" alt="Logotipo de MANGO"></div>
+    <div>
+      <ul>
+        <li><img src="imagenes/auto1.jpg" width="1335" height="300" alt="Logotipo de MANGO"></li>
+        <li><img src="imagenes/auto2.jpg" width="1335" height="300" alt="Logotipo de MANGO"></li>
+        <li><img src="imagenes/auto3.jpg" width="1335" height="300" alt="Logotipo de MANGO"></li>
+      </ul>
+    </div>
     <p>CARRO 1 CARRO 1</p>
     <input type="button" value="VER MÁS"><br>
     <input type="button" value="VER MÁS">
@@ -27,39 +37,24 @@
   <!-- Contendio principal para el buscador-->
   <article>
     <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-      diam nonummy nibh euismod tincidunt ut laoreet dolore
-      magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-      quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-      aliquip ex ea commodo consequat. Duis autem vel eum iriure
-      dolor in hendrerit in vulputate velit esse molestie consequat, vel
-      illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-      iusto odio dignissim qui blandit praesent luptatum zzril delenit
-      augue duis dolore te feugait nulla facilisi.<br>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat.<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet.<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat. Duis autem vel eum iriure
-                dolor in hendrerit in vulputate velit esse molestie consequat, vel
-                illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
-                iusto odio dignissim qui blandit praesent luptatum zzril delenit
-                augue duis dolore te feugait nulla facilisi.<br>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet dolore
-                magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-                aliquip ex ea commodo consequat.<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoreet
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+      aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+      luptatum zzril delenit augue duis dolore te feugait nulla facilisi.<br>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+      veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+      commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+      delenit augue duis dolore te feugait nulla facilisi.<br>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+      nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.<br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
     </p>
   </article>
 </section>
 <!-- Pie de página-->
 <footer>
-  <div><img src="imagenes/mango_logo.png" width="150" height="40" alt="Logotipo de MANGO"></div>
-  <p>Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
-  <div><img src="imagenes/facebook_logo.png" width="40" alt="Logotipo Facebook"></div>
+  <div>
+    <div class="pie_logo" id="pie"><img src="imagenes/mango_logo.png" width="150" height="40" alt="Logotipo de MANGO"></div>
+    <div class="pie_centro" id="pie">
+      <p>Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
+    </div>
+    <div class="pie_face" id="pie"><a href="http://www.facebook.com" target="_blank">
+        <div><img src="imagenes/facebook_logo.png" width="40" alt="Logotipo Facebook"></div></a></div>
+  </div>
 </footer>
