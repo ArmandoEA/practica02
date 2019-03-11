@@ -57,6 +57,21 @@ footer {
 		right: 10px;
 	}
 }
+.texto {
+	text-align: justify;
+	font-size: 18px;
+	width: 1150px;
+	margin: auto;
+}
+.columna_izq {
+	margin-left: 50px;
+	width: 465px;
+	float: left;
+}
+.columna_der {
+	margin-left: 635px;
+	margin-right: 50px;
+}
 #pie {
 	float: left;
 	width: 33.33%;
@@ -65,9 +80,10 @@ footer {
 .pie_logo {
 	position: relative;
 	img {
+		width: 50%;
+		height: 80%;
 		position: absolute;
-		top: 3px;
-		left: 30px;
+		left: 50px;
 	}
 }
 .pie_face {
@@ -75,7 +91,7 @@ footer {
 	img {
 		position: absolute;
 		top: 10px;
-		left: 300px;
+		left: 275px;
 	}
 }
 .pie_centro {
