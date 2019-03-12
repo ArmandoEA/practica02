@@ -37,6 +37,7 @@ footer {
 	overflow: auto;
 	content: "";
 	clear: both;
+	height: 70px;
 }
 #cabecera {
 	float: left;
@@ -70,7 +71,8 @@ footer {
 		width: 50%;
 		height: 80%;
 		position: absolute;
-		left: 50px;
+		left: 40px;
+		top: 8px;
 	}
 }
 
@@ -89,6 +91,8 @@ footer {
     width: 30px;
     font-size: 15px;
     text-align: center;
+    padding-top: 8px; 
+
 }
 
 .mySlides{
@@ -116,4 +120,17 @@ footer {
     right:0%;
     transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%)
+}
+
+.textos{
+  padding: 30px; 
+  text-align: justify;
+}
+
+.parrafo{
+  padding-right: 100px;
+}
+
+.texto_down{
+  padding-top: 8px;
 }
