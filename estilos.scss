@@ -86,15 +86,20 @@ footer {
 		left: 50px;
 	}
 }
-.pie_face {
-	position: relative;
-	img {
-		position: absolute;
-		top: 10px;
-		left: 275px;
-	}
-}
+
 .pie_centro {
 	color: $blanco;
 	text-align: center;
+}
+
+.social{
+    position: absolute;
+    color: $blanco;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
 }
