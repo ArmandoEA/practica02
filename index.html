@@ -26,31 +26,21 @@
     </nav>
   </header>
   <!-- Sección del contenido principal. Wrapper: contenedor-->
-  <section class="wrapper">
-    <section class="slider">
-      <div>
-        <ul>
-          <li><img src="imagenes/auto1.jpg" width="1335" height="300" alt="Logotipo de MANGO"></li>
-          <li><img src="imagenes/auto2.jpg" width="1335" height="300" alt="Logotipo de MANGO"></li>
-          <li><img src="imagenes/auto3.jpg" width="1335" height="300" alt="Logotipo de MANGO"></li>
-        </ul>
+  <div class="content"><img class="mySlides" src="imagenes/auto1.jpg"><img class="mySlides" src="imagenes/auto2.jpg"><img class="mySlides" src="imagenes/auto3.jpg">
+    <button class="button-color button-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="button-color button-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <!-- Contendio principal para el buscador-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <p>Lorem ipsum dolor amet viral mumblecore fam jean shorts keffiyeh, synth edison bulb raclette chia. Beard irony keytar meditation mixtape lyft, scenester mustache palo santo retro meggings chia marfa. Godard man braid etsy poke raclette woke meggings roof party. Echo park pickled mlkshk readymade, before they sold out cronut pok pok dreamcatcher kinfolk. Lomo helvetica drinking vinegar letterpress readymade pork belly schlitz hexagon authentic chillwave.Vape chicharrones church-key pitchfork. Slow-carb blue bottle small batch you probably haven't heard of them cold-pressed literally, pork belly twee polaroid drinking vinegar edison bulb skateboard migas whatever tote bag. Venmo retro keffiyeh four loko, 8-bit lyft woke pok pok biodiesel vexillologist shoreditch banjo austin. La croix microdosing green juice air plant, tumeric locavore bicycle rights semiotics coloring book direct trade PBR&B. Portland photo booth lomo thundercats kogi, occupy poke.</p>
       </div>
-      <p>CARRO 1 CARRO 1</p>
-      <input type="button" value="VER MÁS"><br>
-      <input type="button" value="VER MÁS">
-    </section>
-    <!-- Contendio principal para el buscador-->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <p>Lorem ipsum dolor amet viral mumblecore fam jean shorts keffiyeh, synth edison bulb raclette chia. Beard irony keytar meditation mixtape lyft, scenester mustache palo santo retro meggings chia marfa. Godard man braid etsy poke raclette woke meggings roof party. Echo park pickled mlkshk readymade, before they sold out cronut pok pok dreamcatcher kinfolk. Lomo helvetica drinking vinegar letterpress readymade pork belly schlitz hexagon authentic chillwave.Vape chicharrones church-key pitchfork. Slow-carb blue bottle small batch you probably haven't heard of them cold-pressed literally, pork belly twee polaroid drinking vinegar edison bulb skateboard migas whatever tote bag. Venmo retro keffiyeh four loko, 8-bit lyft woke pok pok biodiesel vexillologist shoreditch banjo austin. La croix microdosing green juice air plant, tumeric locavore bicycle rights semiotics coloring book direct trade PBR&B. Portland photo booth lomo thundercats kogi, occupy poke.</p>
-        </div>
-        <div class="col-sm-6">
-          <p>Lorem ipsum dolor amet viral mumblecore fam jean shorts keffiyeh, synth edison bulb raclette chia. Beard irony keytar meditation mixtape lyft, scenester mustache palo santo retro meggings chia marfa. Godard man braid etsy poke raclette woke meggings roof party. Echo park pickled mlkshk readymade, before they sold out cronut pok pok dreamcatcher kinfolk. Lomo helvetica drinking vinegar letterpress readymade pork belly schlitz hexagon authentic chillwave.Vape chicharrones church-key pitchfork. Slow-carb blue bottle small batch you probably haven't heard of them cold-pressed literally, pork belly twee polaroid drinking vinegar edison bulb skateboard migas whatever tote bag. Venmo retro keffiyeh four loko, 8-bit lyft woke pok pok biodiesel vexillologist shoreditch banjo austin. La croix microdosing green juice air plant, tumeric locavore bicycle rights semiotics coloring book direct trade PBR&B. Portland photo booth lomo thundercats kogi, occupy poke.</p>
-        </div> 
+      <div class="col-sm-6">
+        <p>Lorem ipsum dolor amet viral mumblecore fam jean shorts keffiyeh, synth edison bulb raclette chia. Beard irony keytar meditation mixtape lyft, scenester mustache palo santo retro meggings chia marfa. Godard man braid etsy poke raclette woke meggings roof party. Echo park pickled mlkshk readymade, before they sold out cronut pok pok dreamcatcher kinfolk. Lomo helvetica drinking vinegar letterpress readymade pork belly schlitz hexagon authentic chillwave.Vape chicharrones church-key pitchfork. Slow-carb blue bottle small batch you probably haven't heard of them cold-pressed literally, pork belly twee polaroid drinking vinegar edison bulb skateboard migas whatever tote bag. Venmo retro keffiyeh four loko, 8-bit lyft woke pok pok biodiesel vexillologist shoreditch banjo austin. La croix microdosing green juice air plant, tumeric locavore bicycle rights semiotics coloring book direct trade PBR&B. Portland photo booth lomo thundercats kogi, occupy poke.</p>
       </div>
     </div>
-  </section>
+  </div>
   <!-- Pie de página-->
   <footer>
     <div>
@@ -64,4 +54,21 @@
   <!--scripts-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    function plusDivs(n) {
+    showDivs(slideIndex +=n);
+    }
+    function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+    }
+  </script>
 </body>

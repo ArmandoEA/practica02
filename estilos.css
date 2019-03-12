@@ -75,3 +75,27 @@ footer {
   width: 30px;
   font-size: 15px;
   text-align: center; }
+
+.mySlides {
+  display: none;
+  width: 100%; }
+
+.button-color:hover {
+  color: black!important;
+  background-color: #ccc!important; }
+
+.button-display-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%); }
+
+.button-display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%); }
