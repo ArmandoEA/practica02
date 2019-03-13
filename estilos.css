@@ -77,7 +77,8 @@ footer {
   width: 30px;
   font-size: 15px;
   text-align: center;
-  padding-top: 8px; }
+  padding-top: 8px;
+  right: 40px; }
 
 .mySlides {
   display: none;
