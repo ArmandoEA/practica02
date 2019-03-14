@@ -174,10 +174,15 @@ footer {
 .textos{
   padding: 30px; 
   text-align: justify;
+  line-height: 20px;
 }
 
-.parrafo{
-  padding-right: 100px;
+.parrafo_izq{
+  padding-right: 75px;
+}
+
+.parrafo_der{
+    padding-left: 75px;
 }
 
 .texto_down{
@@ -216,4 +221,5 @@ button.css3button {
     top: 50%;
     left: 10%;
     position: absolute;
-}
+}  
+  
