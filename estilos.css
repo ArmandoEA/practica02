@@ -23,13 +23,6 @@ header {
         header ul li a:hover {
           color: yellow; }
 
-footer {
-  background: #7D807B;
-  overflow: auto;
-  content: "";
-  clear: both;
-  height: 80px; }
-
 #cabecera {
   float: left;
   width: 50%;
@@ -48,6 +41,13 @@ footer {
     position: absolute;
     top: 20px;
     right: 10px; }
+
+footer {
+  background: #7D807B;
+  overflow: auto;
+  content: "";
+  clear: both;
+  height: 80px; }
 
 #pie {
   float: left;
@@ -69,16 +69,17 @@ footer {
 
 .social {
   position: absolute;
-  color: white;
+  background: white;
+  color: #7D807B;
   display: inline-block;
-  height: 30px;
-  line-height: 30px;
-  margin: auto 3px;
-  width: 30px;
-  font-size: 15px;
+  height: 45px;
+  width: 45px;
+  font-size: 30px;
   text-align: center;
   padding-top: 8px;
-  right: 40px; }
+  right: 150px;
+  border-radius: 50%;
+  margin-top: 15px; }
 
 .mySlides {
   display: none;
