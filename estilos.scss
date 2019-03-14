@@ -190,36 +190,18 @@ footer {
 }
 
 button.css3button {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: #123d54;
-	padding: 10px 20px;
-	background: -moz-linear-gradient(
-		top,
-		#fafafa 0%,
-		#808080);
-	background: -webkit-gradient(
-		linear, left top, left bottom,
-		from(#fafafa),
-		to(#808080));
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	border: 1px solid #000000;
-	-moz-box-shadow:
-		0px 1px 3px rgba(0,0,0,0.5),
-		inset 0px 0px 1px rgba(255,255,255,1);
-	-webkit-box-shadow:
-		0px 1px 3px rgba(0,0,0,0.5),
-		inset 0px 0px 1px rgba(255,255,255,1);
-	box-shadow:
-		0px 1px 3px rgba(0,0,0,0.5),
-		inset 0px 0px 1px rgba(255,255,255,1);
-	text-shadow:
-		0px -1px 0px rgba(000,000,000,0.7),
-		0px 1px 0px rgba(255,255,255,0.3);
-    top: 50%;
-    left: 10%;
-    position: absolute;
+	position: absolute;
+    top: 43%;
+    left: 12%;
+    background: none;
+    color: $blanco;
+    width: 130px;
+    height: 35px;
+    letter-spacing: -0.5px;
+    border: 3px solid $blanco;
+    &:hover{
+        color: $negro;
+        background: $blanco;
+    }
 }  
   
