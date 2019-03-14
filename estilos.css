@@ -42,50 +42,38 @@ header {
     top: 20px;
     right: 10px; }
 
-footer {
-  background: #7D807B;
-  overflow: auto;
-  content: "";
-  clear: both;
-  height: 80px; }
-
-#pie {
-  float: left;
-  width: 33.33%;
-  height: 60px; }
-
-.pie_logo {
-  position: relative; }
-  .pie_logo img {
-    width: 50%;
-    height: 80%;
-    position: absolute;
-    left: 40px;
-    top: 8px; }
-
-.pie_centro {
-  color: white;
-  text-align: center; }
-
-.social {
-  position: absolute;
-  background: white;
-  color: #7D807B;
-  display: inline-block;
-  height: 45px;
-  width: 45px;
-  font-size: 30px;
-  text-align: center;
-  padding-top: 8px;
-  right: 150px;
-  border-radius: 50%;
-  margin-top: 15px; }
-
 .mySlides {
   display: none;
-  width: 100%;
+  width: 100%; }
+
+.mySlides img {
   -webkit-filter: brightness(0.6);
-  filter: brightness(0.6); }
+  filter: brightness(0.6);
+  width: 100%; }
+
+.mySlides p {
+  position: absolute;
+  top: 32%;
+  left: 12%;
+  color: white;
+  font-family: arial;
+  font-size: 33px;
+  font-weight: bold;
+  letter-spacing: 2px; }
+
+button.css3button {
+  position: absolute;
+  top: 43%;
+  left: 12%;
+  background: none;
+  color: white;
+  width: 130px;
+  height: 35px;
+  letter-spacing: -0.5px;
+  border: 3px solid white; }
+  button.css3button:hover {
+    color: black;
+    background: white; }
 
 .button-color:hover {
   color: black;
@@ -95,6 +83,8 @@ footer {
   position: absolute;
   top: 40%;
   left: 0%;
+  width: 30px;
+  height: 50px;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
@@ -113,6 +103,8 @@ footer {
   position: absolute;
   top: 40%;
   right: 0%;
+  width: 30px;
+  height: 50px;
   -webkit-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
   -ms-transform: translate(0%, -50%);
@@ -138,19 +130,42 @@ footer {
 .parrafo_der {
   padding-left: 75px; }
 
-.texto_down {
+footer {
+  background: #7D807B;
+  overflow: auto;
+  content: "";
+  clear: both;
+  height: 80px; }
+
+#pie {
+  float: left;
+  width: 33.33%;
+  height: 60px; }
+
+.pie_logo {
+  position: relative; }
+  .pie_logo img {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    left: 40px;
+    top: 8px; }
+
+.pie_centro {
+  color: white;
+  text-align: center;
   padding-top: 8px; }
 
-button.css3button {
+.social {
   position: absolute;
-  top: 43%;
-  left: 12%;
-  background: none;
-  color: white;
-  width: 130px;
-  height: 35px;
-  letter-spacing: -0.5px;
-  border: 3px solid white; }
-  button.css3button:hover {
-    color: black;
-    background: white; }
+  background: white;
+  color: #7D807B;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 8px;
+  right: 150px;
+  border-radius: 50%;
+  margin-top: 15px; }

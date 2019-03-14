@@ -7,6 +7,10 @@ $negro: black;
 * {
 	box-sizing: border-box;
 }
+
+
+
+//CABECERA
 header {
 	background: $gris;
 	overflow: auto;
@@ -53,64 +57,53 @@ header {
 		right: 10px;
 	}
 }
-footer {
-	background: $gris;
-	overflow: auto;
-	content: "";
-	clear: both;
-	height: 80px;
-}
-#pie {
-	float: left;
-	width: 33.33%;
-	height: 60px;
-}
-.pie_logo {
-	position: relative;
-	img {
-		width: 50%;
-		height: 80%;
-		position: absolute;
-		left: 40px;
-		top: 8px;
-	}
-}
 
-.pie_centro {
-	color: $blanco;
-	text-align: center;
-}
 
-.social{
-    position: absolute;
-    background: $blanco;
-    color: $gris;
-    display: inline-block;
-    height: 45px;
-    width: 45px;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 8px;
-    right: 150px;
-    border-radius: 50%;
-    margin-top: 15px;
-}
 
+//SLIDER
 .mySlides{
     display:none;
     width: 100%;
-    filter:brightness(0.6);
 }
-
+.mySlides img{
+    filter:brightness(0.6);
+    width: 100%;
+}
+.mySlides p{
+    position: absolute;
+    top:32%;
+    left:12%;
+    color: $blanco;
+    font-family: arial;
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+button.css3button {
+	position: absolute;
+    top: 43%;
+    left: 12%;
+    background: none;
+    color: $blanco;
+    width: 130px;
+    height: 35px;
+    letter-spacing: -0.5px;
+    border: 3px solid $blanco;
+    &:hover{
+        color: $negro;
+        background: $blanco;
+    }
+}
 .button-color:hover{
     color:$negro;
     background-color:$gris-claro
 }
-
 .button-display-left{
     position:absolute;
     top:40%;
     left:0%;
+    width: 30px;
+    height: 50px;
     transform:translate(0%,-50%);
     -ms-transform:translate(-0%,-50%);
     background: -moz-linear-gradient(
@@ -138,11 +131,12 @@ footer {
 		0px -1px 0px rgba(000,000,000,0.7),
 		0px 1px 0px rgba(255,255,255,0.3);
 }
-
 .button-display-right{
     position:absolute;
     top:40%;
     right:0%;
+    width: 30px;
+    height: 50px;
     transform:translate(0%,-50%);
     -ms-transform:translate(0%,-50%);
     background: -moz-linear-gradient(
@@ -171,6 +165,9 @@ footer {
 		0px 1px 0px rgba(255,255,255,0.3);
 }
 
+
+
+//TEXTO
 .textos{
   padding: 30px; 
   text-align: justify;
@@ -185,23 +182,48 @@ footer {
     padding-left: 75px;
 }
 
-.texto_down{
-  padding-top: 8px;
-}
 
-button.css3button {
-	position: absolute;
-    top: 43%;
-    left: 12%;
-    background: none;
-    color: $blanco;
-    width: 130px;
-    height: 35px;
-    letter-spacing: -0.5px;
-    border: 3px solid $blanco;
-    &:hover{
-        color: $negro;
-        background: $blanco;
-    }
-}  
+
+//PIE DE PÁGINA
+footer {
+	background: $gris;
+	overflow: auto;
+	content: "";
+	clear: both;
+	height: 80px;
+}
+#pie {
+	float: left;
+	width: 33.33%;
+	height: 60px;
+}
+.pie_logo {
+	position: relative;
+	img {
+		width: 50%;
+		height: 80%;
+		position: absolute;
+		left: 40px;
+		top: 8px;
+	}
+}
+.pie_centro {
+	color: $blanco;
+	text-align: center;
+    padding-top: 8px;
+}
+.social{
+    position: absolute;
+    background: $blanco;
+    color: $gris;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 8px;
+    right: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+} 
   

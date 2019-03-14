@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="estilos.css">
   <!--link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.7.2/css/all.css",integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr",crossorigin="anonymous")-->
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <!-- Cabecera-->
 <body>
@@ -27,10 +28,22 @@
     </nav>
   </header>
   <!-- Sección del contenido principal. Wrapper: contenedor-->
-  <div class="content"><img class="mySlides" src="imagenes/auto1.jpg"><img class="mySlides" src="imagenes/auto2.jpg"><img class="mySlides" src="imagenes/auto3.jpg">
+  <div class="content">
+    <div class="mySlides"><img src="imagenes/auto1.jpg">
+      <p>CARRO 1 CARRO 1</p>
+      <button class="css3button" type="button" name="btnVermas1" value="">VER MÁS</button>
+    </div>
+    <div class="mySlides"><img src="imagenes/auto2.jpg">
+      <p>CARRO 2 CARRO 2</p>
+      <button class="css3button" type="button" name="btnVermas2" value="">VER MÁS</button>
+    </div>
+    <div class="mySlides"><img src="imagenes/auto3.jpg">
+      <p>CARRO 3 CARRO 3</p>
+      <button class="css3button" type="button" name="btnVermas3" value="">VER MÁS</button>
+    </div>
     <button class="button-color button-display-left" onclick="plusDivs(-1)">&#10094;</button>
     <button class="button-color button-display-right" onclick="plusDivs(1)">&#10095;</button>
-    <button class="css3button" type="button" name="" value="">VER MÁS</button>
+    <!--button.css3button(type='button', name='', value='') VER MÁS-->
   </div>
   <!-- Contendio principal para el buscador-->
   <div class="container textos">
@@ -48,7 +61,7 @@
     <div>
       <div class="pie_logo" id="pie"><img src="imagenes/mango_logo.png" width="150" height="40" alt="Logotipo de MANGO"></div>
       <div class="pie_centro" id="pie">
-        <p class="texto_down">Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
+        <p>Lorem ipsum Lorem ipsum<br>Lorem ipsum</p>
       </div>
       <div class="pie_face" id="pie"><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook social"></i></a></div>
     </div>
@@ -60,17 +73,21 @@
     var slideIndex = 1;
     showDivs(slideIndex);
     function plusDivs(n) {
-    showDivs(slideIndex +=n);
+      showDivs(slideIndex +=n);
     }
     function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-    }
-    x[slideIndex-1].style.display = "block";
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
     }  
   </script>
 </body>
